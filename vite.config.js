@@ -7,7 +7,7 @@ const include = (html, depth = 0) =>
   depth > 5 ? html : html.replace(/<!--#include (\w+) -->/g, (_, n) =>
     include(readFileSync(resolve(__dirname, `src/partials/${n}.html`), 'utf8'), depth + 1));
 
-const pages = ['', 'cube-home', 'residential', 'commercial', 'social', 'our-requirements'];
+const pages = ['', 'cube-home', 'residential', 'commercial', 'social', 'our-requirements', 'contact'];
 
 export default defineConfig({
   base: '/',
