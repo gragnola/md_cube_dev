@@ -1,6 +1,11 @@
 # Changelog
 
-Newest entries first. Headings: `## YYYY-MM-DD — Name (via assistant)`.
+Newest entries first. Headings: `## 2026-10-19 — Mark Dunleavy (via Cube Developments)
+
+- Fixed redirect loop on inner pages (.htaccess clean-URL rule).
+- Removed standalone Contact page (archived to DeleteMeDec26/); nav "Contact us" now jumps to the footer form; /contact/ redirects home.
+
+## YYYY-MM-DD — Name (via assistant)`.
 
 ## 2026-10-19 — Mark Dunleavy (via Cube Developments)
 
