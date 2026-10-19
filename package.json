@@ -1,0 +1,18 @@
+{
+  "name": "md-cube-dev",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "githubRepo": "gragnola/md_cube_dev",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/titillium-web": "^5.1.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.3"
+  }
+}

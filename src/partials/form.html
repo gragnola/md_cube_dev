@@ -1,0 +1,9 @@
+<form class="contact-form" action="/contact.php" method="post" data-contact novalidate>
+  <label>Name<input type="text" name="name" required maxlength="100" autocomplete="name"></label>
+  <label>Email<input type="email" name="email" required maxlength="254" autocomplete="email"></label>
+  <label>Phone (optional)<input type="tel" name="phone" maxlength="40" autocomplete="tel"></label>
+  <label>Message<textarea name="message" required maxlength="5000" rows="5"></textarea></label>
+  <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+  <button type="submit">Send</button>
+  <p class="form-status" role="status" aria-live="polite"></p>
+</form>
