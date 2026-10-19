@@ -44,22 +44,3 @@ document.querySelectorAll('[data-carousel]').forEach((c) => {
   c.addEventListener('mouseleave', restart);
   go(0); restart();
 });
-
-// Contact forms -> /contact.php (JSON)
-document.querySelectorAll('form[data-contact]').forEach((form) => {
-  const status = form.querySelector('.form-status');
-  form.addEventListener('submit', async (ev) => {
-    ev.preventDefault();
-    if (!form.checkValidity()) { status.textContent = 'Please fill in your name, a valid email and a message.'; form.reportValidity(); return; }
-    const btn = form.querySelector('button[type=submit]');
-    btn.disabled = true; status.textContent = 'Sending…';
-    try {
-      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
-      const data = await res.json().catch(() => ({}));
-      status.textContent = data.message || (res.ok ? 'Thank you, your message has been sent.' : 'Sorry, something went wrong. Please email enquiries@cubedevelopments.com.');
-      if (res.ok && data.ok) form.reset();
-    } catch {
-      status.textContent = 'Sorry, the message could not be sent. Please email enquiries@cubedevelopments.com.';
-    } finally { btn.disabled = false; }
-  });
-});

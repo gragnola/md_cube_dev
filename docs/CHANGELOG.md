@@ -3,7 +3,7 @@
 Newest entries first. Headings: `## 2026-10-19 — Mark Dunleavy (via Cube Developments)
 
 - Fixed redirect loop on inner pages (.htaccess clean-URL rule).
-- Removed standalone Contact page (archived to DeleteMeDec26/); nav "Contact us" now jumps to the footer form; /contact/ redirects home.
+- Removed all contact forms and the PHP mail handler (archived to DeleteMeDec26/); the Contact page stays with the live site's contact details only.
 
 ## YYYY-MM-DD — Name (via assistant)`.
 
