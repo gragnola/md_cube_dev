@@ -1,5 +1,5 @@
 # Apache config for dev.cubedevelopments.com (copied into dist/ by deploy.yml)
-Options -Indexes
+Options -Indexes -MultiViews
 DirectoryIndex index.html index.php
 
 <IfModule mod_rewrite.c>

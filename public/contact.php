@@ -16,7 +16,7 @@ function respond(bool $ok, string $message, int $status = 200): void {
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode(['ok' => $ok, 'message' => $message]);
     } else {
-        $back = '/contact/?sent=' . ($ok ? '1' : '0');
+        $back = '/?sent=' . ($ok ? '1' : '0') . '#contact';
         header('Location: ' . $back, true, 303);
     }
     exit;
