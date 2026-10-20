@@ -5,6 +5,10 @@ Newest entries first. Headings: `## 2026-10-19 — Mark Dunleavy (via Cube Devel
 - Fixed redirect loop on inner pages (.htaccess clean-URL rule).
 - Removed all contact forms and the PHP mail handler (archived to DeleteMeDec26/); the Contact page stays with the live site's contact details only.
 
+## 2026-10-20 — Mark Dunleavy (via Cube Developments)
+
+- Fixed missing spaces in mobile menu items (space before hidden line breaks).
+
 ## YYYY-MM-DD — Name (via assistant)`.
 
 ## 2026-10-19 — Mark Dunleavy (via Cube Developments)
