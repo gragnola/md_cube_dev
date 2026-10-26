@@ -6,7 +6,7 @@ At the start of every session, read docs/CHANGELOG.md; after any change, add a d
 
 ### Purpose
 
-Static rebuild of **Cube Developments** ([cubedevelopments.com](http://www.cubedevelopments.com), a property development company, Woodford Green, Essex). The live site is WordPress (Salient theme); this repo replaces it with clean static HTML/CSS/JS built by Vite, plus one PHP contact handler. Staging: **dev.cubedevelopments.com** on cleo.blue-chip.net (Virtualmin / AlmaLinux / Apache). **Paul** and **Mark** maintain the repo via AI assistants and do not work on it at the same time.
+Static rebuild of **Cube Developments** ([cubedevelopments.com](http://www.cubedevelopments.com), a property development company, Woodford Green, Essex). The live site is WordPress (Salient theme); this repo replaces it with clean static HTML/CSS/JS built by Vite. Live domain: **cubedevelopments.com** (was staged on dev.cubedevelopments.com until 2026-10-26; deploy target set by repo secrets). **Paul** and **Mark** maintain the repo via AI assistants and do not work on it at the same time.
 
 ### Repository layout
 
@@ -14,7 +14,7 @@ Static rebuild of **Cube Developments** ([cubedevelopments.com](http://www.cubed
 |------|------|
 | `index.html`, `<page>/index.html` | One Vite entry per page (clean URLs: `/residential/` etc.) |
 | `src/` | `main.js`, `style.css`, `partials/` (header, footer, form — inlined at build via `<!--#include name -->`) |
-| `public/` | Static files copied into `dist/` (images, `contact.php`) — **no private material here** |
+| `public/` | Static files copied into `dist/` (images) — **no private material here** |
 | `.htaccess` | Apache config, copied into `dist/` by the deploy workflow |
 | `dist/` | **Only this folder is deployed** (`npm run build` produces it) |
 | `docs/` | Client briefs and correspondence — **never deployed** |
@@ -36,7 +36,7 @@ Redundant files are moved with `git mv`, never deleted, into a top-level folder 
 
 ### Email
 
-Assistants may **draft** email copy only; they must **never send** email. (The site's contact form sends to `noreply@dev.cubedevelopments.com` via `public/contact.php`.)
+Assistants may **draft** email copy only; they must **never send** email.
 
 ### Facts and figures
 
