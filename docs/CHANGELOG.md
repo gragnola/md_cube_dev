@@ -7,6 +7,10 @@ Newest entries first. Headings: `## 2026-10-19 — Mark Dunleavy (via Cube Devel
 
 ## 2026-10-26 — Mark Dunleavy (via Cube Developments)
 
+- Contact page: removed address, phone/fax and email (already shown in the footer).
+
+## 2026-10-26 — Mark Dunleavy (via Cube Developments)
+
 - Project domain changed to the live cubedevelopments.com (repo secrets repointed by Mark). Docs updated; no code changes needed.
 
 ## 2026-10-20 — Mark Dunleavy (via Cube Developments)
