@@ -17,7 +17,7 @@ Adapted from the shared gragnola blueprint (md_havelock) for a static brochure s
 - `src/main.js`: mobile nav, header shrink on scroll, lightweight carousel, AJAX contact form.
 - `src/style.css`: design tokens (Titillium Web; black/white/#333; gold `#e1a457`, deeper gold `#dd9933`), CSS-only parallax (`background-attachment: fixed`, disabled on touch / reduced motion).
 - Fonts are self-hosted via `@fontsource/titillium-web` (no Google Fonts request).
-- `public/contact.php`: validation, honeypot, CR/LF stripping against header injection, `mail()` to and from `noreply@dev.cubedevelopments.com`, `Reply-To` = visitor; JSON for fetch, 303 redirect otherwise.
+- No contact form or PHP (removed 2026-10-19 at Mark's request; archived in DeleteMeDec26/).
 
 ## 3. Content source
 Text and images were taken from the live WordPress site on 19/10/2026 (mirror kept outside the repo). Only images used on the 7 pages were copied, resized (heroes ≤1920px, project photos ≤800px) and re-compressed.

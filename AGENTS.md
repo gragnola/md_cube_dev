@@ -14,7 +14,7 @@ Static rebuild of **Cube Developments** ([cubedevelopments.com](http://www.cubed
 |------|------|
 | `index.html`, `<page>/index.html` | One Vite entry per page (clean URLs: `/residential/` etc.) |
 | `src/` | `main.js`, `style.css`, `partials/` (header, footer, form — inlined at build via `<!--#include name -->`) |
-| `public/` | Static files copied into `dist/` (images, `contact.php`) — **no private material here** |
+| `public/` | Static files copied into `dist/` (images) — **no private material here** |
 | `.htaccess` | Apache config, copied into `dist/` by the deploy workflow |
 | `dist/` | **Only this folder is deployed** (`npm run build` produces it) |
 | `docs/` | Client briefs and correspondence — **never deployed** |

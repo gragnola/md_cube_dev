@@ -6,7 +6,7 @@ Static rebuild of [cubedevelopments.com](http://www.cubedevelopments.com) now se
 
 ```bash
 npm install
-npm run dev      # Vite dev server (contact.php needs a PHP server to test)
+npm run dev      # Vite dev server
 npm run build    # Output to dist/
 npm run preview  # Serve dist/ locally
 ```
@@ -22,7 +22,7 @@ On push to **`main`**, GitHub Actions (`.github/workflows/deploy.yml`) builds th
 | Path | Purpose |
 |------|---------|
 | `src/` | JS, CSS, HTML partials |
-| `public/` | Images and `contact.php`, copied into `dist/` (no private material) |
+| `public/` | Images, copied into `dist/` (no private material) |
 | `docs/` | Client briefs, correspondence — **never deployed** |
 | `project/` | Research, notes — **never deployed** |
 | `media/` | Full-resolution originals — **never deployed** |
