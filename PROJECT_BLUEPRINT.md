@@ -6,7 +6,7 @@
 Adapted from the shared gragnola blueprint (md_havelock) for a static brochure site.
 
 ## 1. Infrastructure & constraints
-- **Server:** cleo.blue-chip.net — AlmaLinux, Virtualmin, Apache, PHP. Virtual server `dev.cubedevelopments.com`.
+- **Server:** cleo.blue-chip.net — AlmaLinux, Virtualmin, Apache, PHP. Live domain `cubedevelopments.com` (moved from dev.cubedevelopments.com on 2026-10-26); deploy server set by repo secrets.
 - **No Node.js on the server.** Node/Vite is used only to build; the output is static HTML/CSS/JS plus PHP.
 - **Deploy:** GitHub Actions → FTP upload of `dist/` into the web root (`FTP_PATH`).
 - **Times** in Italian local format `dd/mm/yyyy HH:mm`. **UK English** throughout.

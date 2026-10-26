@@ -1,6 +1,6 @@
 # Cube Developments (md_cube_dev)
 
-Static rebuild of [cubedevelopments.com](http://www.cubedevelopments.com) for **dev.cubedevelopments.com**. Plain HTML/CSS/JS built with Vite; one PHP file (`public/contact.php`) handles the contact form with PHP `mail()`.
+Static rebuild of [cubedevelopments.com](http://www.cubedevelopments.com) now served on the live domain **cubedevelopments.com**. Plain HTML/CSS/JS built with Vite; no forms or PHP.
 
 ## Run and build
 
