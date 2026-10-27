@@ -2,6 +2,10 @@
 
 Newest entries first. Headings: `## 2026-10-27 — Mark Dunleavy (via Cube Development Dev)
 
+- Redeployed to the development server (FTP repo secrets repointed by Mark). No code changes.
+
+## 2026-10-27 — Mark Dunleavy (via Cube Development Dev)
+
 - Footer Last updated time is now stamped automatically (Europe/Rome) by the deploy workflow on every merge to main; merge process documented in AGENTS.md. Version 0.1.1.
 
 ## 2026-10-19 — Mark Dunleavy (via Cube Developments)
