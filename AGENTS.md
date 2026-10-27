@@ -30,7 +30,7 @@ Redundant files are moved with `git mv`, never deleted, into a top-level folder 
 ### Release flow
 
 - Day-to-day work happens on **`dev`**.
-- Merge **`dev`** into **`main`** with a **merge commit** only when Paul or Mark asks — pushing to `main` triggers deploy.
+- Merge **`dev`** into **`main`** with a **merge commit** only when Paul or Mark asks — pushing to `main` triggers deploy. The deploy workflow automatically stamps the footer's Last updated time with the deploy time in Italian local time (Europe/Rome), so the live site always shows when it was last merged; also update the committed footer timestamp and log the merge in the changelog.
 - After a release, sync **`main`** back into **`dev`**.
 - Use a single shared **`dev` → `main`** pull request when needed.
 
